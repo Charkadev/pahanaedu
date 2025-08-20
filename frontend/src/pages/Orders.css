@@ -1,0 +1,233 @@
+/* ---------- Orders Page Container ---------- */
+.orders-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.orders-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ---------- Back Button ---------- */
+.back-btn {
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  border: 1px solid #434a52;
+  border-radius: 5px;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+/* ---------- Add Button ---------- */
+.add-order-btn {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: 1px solid #434a52;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-order-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+
+/* ---------- Search Section ---------- */
+.orders-search {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center; /* center input and button vertically */
+}
+
+.orders-search input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  max-width: 300px; /* optional: limit width like Customers/Items */
+}
+
+.reset-btn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #434a52;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  width: auto;       /* ensure button width is not stretched */
+  white-space: nowrap; /* keep text on single line */
+  transition: all 0.2s ease-in-out;
+}
+
+.reset-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+
+
+/* ---------- Orders Table ---------- */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd; /* lighter border like Items table */
+  padding: 8px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #dfdada;
+  color: #333;
+  font-weight: bold;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Table Buttons */
+.orders-table button.edit-btn,
+.orders-table button.delete-btn {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+  color: #4e4c4c;
+}
+
+.orders-table button.edit-btn {
+  background-color: #cbcfd6;
+  border: 1px solid #cbcfd6;
+}
+
+.orders-table button.edit-btn:hover {
+  background-color: #eebe87;
+  border-color: #eebe87;
+}
+
+.orders-table button.delete-btn {
+  background-color: #db515f;
+  border: 1px solid #db515f;
+}
+
+.orders-table button.delete-btn:hover {
+  background-color: #eebe87;
+  border-color: #eebe87;
+}
+
+/* ---------- Order Form ---------- */
+.order-form {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.order-form .form-group {
+  margin-bottom: 10px;
+}
+
+.order-form select,
+.order-form input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 0.95rem;
+}
+
+.order-form .items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.order-form .item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-form .item-name {
+  flex: 1;
+}
+
+.order-form .item-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.order-form .quantity-input {
+  width: 60px;
+}
+
+/* Form Buttons */
+.order-form .form-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.order-form .form-actions button.submit-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: 1px solid #434a52;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.order-form .form-actions button.submit-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+.order-form .form-actions button.cancel-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: 1px solid #999;
+  background-color: #999;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.order-form .form-actions button.cancel-btn:hover {
+  background-color: #666;
+  border-color: #666;
+}
