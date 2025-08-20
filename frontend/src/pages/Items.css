@@ -1,0 +1,211 @@
+/* ---------- Container ---------- */
+.items-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  /* Match Billing & Customers look */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Page background (grey outside the card) */
+body {
+  background-color: #f0f0f0;
+}
+
+.items-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.items-container p.error {
+  color: red;
+}
+
+/* Actions & Search */
+.items-actions,
+.items-search {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.items-actions input,
+.items-search input {
+  padding: 6px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ---------- Back Button ---------- */
+.back-btn {
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  border: 1px solid #434a52;
+  border-radius: 5px;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+/* ---------- Add New Item Button ---------- */
+.items-actions .add-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border: 1px solid #434a52;
+  border-radius: 5px;
+  background-color: #434a52;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.items-actions .add-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+/* ---------- Table ---------- */
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.items-table th,
+.items-table td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+.items-table th {
+  background-color: #dfdada;
+}
+
+/* ---------- Table Buttons ---------- */
+.items-table button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: all 0.2s ease-in-out;
+  color: #4e4c4c;
+}
+
+/* Edit button */
+.items-table button.edit-btn {
+  background-color: #cbcfd6;
+  border: 1px solid #cbcfd6;
+}
+
+.items-table button.edit-btn:hover {
+  background-color: #eebe87;
+  border-color: #eebe87;
+}
+
+/* Delete button */
+.items-table button.delete-btn {
+  background-color: #db515f;
+  border: 1px solid #db515f;
+}
+
+.items-table button.delete-btn:hover {
+  background-color: #eebe87;
+  border-color: #eebe87;
+}
+
+/* Image preview */
+.items-table img.preview {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ---------- Item Form ---------- */
+.item-form {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.item-form h3 {
+  margin-bottom: 10px;
+}
+
+.item-form div {
+  margin-bottom: 10px;
+}
+
+.item-form label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.item-form input[type="text"],
+.item-form input[type="number"],
+.item-form input[type="file"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+/* ---------- Form Buttons ---------- */
+.item-form .form-buttons {
+  display: flex;
+  gap: 10px; /* spacing between Add and Cancel */
+  margin-top: 10px;
+}
+
+.item-form .form-buttons button {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add button */
+.item-form button.add-btn {
+  border: 1px solid #434a52;
+  background-color: #434a52;
+  color: #fff;
+}
+
+.item-form button.add-btn:hover {
+  background-color: #cf842e;
+  border-color: #cf842e;
+}
+
+/* Cancel button */
+.item-form button.cancel-btn {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+}
+
+.item-form button.cancel-btn:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
