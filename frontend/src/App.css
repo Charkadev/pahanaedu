@@ -1,0 +1,139 @@
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Body ---------- */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+
+/* ---------- Buttons ---------- */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  background-color: #434a52;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cf842e;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Auth-specific buttons inside .app-auth-container */
+.app-auth-container button {
+  background-color: #434a52;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+}
+
+.app-auth-container button:hover {
+  background-color: #cf842e;
+}
+
+/* ---------- Inputs & Selects ---------- */
+input, select, textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1976d2;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #e3f2fd;
+}
+
+/* ---------- Forms ---------- */
+form {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* ---------- Containers ---------- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ---------- Login/Register Section ---------- */
+.app-auth-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.app-auth-container p {
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+/* ---------- Error Messages ---------- */
+.error,
+.app-auth-container .error,
+.login-form p,
+.register-form p {
+  color: red;
+  margin-top: 10px;
+}
