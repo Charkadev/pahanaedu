@@ -1,0 +1,50 @@
+.help-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.help-section {
+  margin-bottom: 25px;
+}
+
+.help-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #434a52;
+}
+
+.help-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.help-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.help-section ul li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.help-footer {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #777;
+  text-align: center;
+}
