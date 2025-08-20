@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1919;
+  color: #fff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.brand-logo {
+  width: 140px; /* adjust logo size */
+  height: 70px;
+}
+
+.nav-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #f0a500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  margin-right: 15px;
+}
+
+/* Scoped button style (won’t clash with global App.css buttons) */
+.navbar-btn {
+  padding: 8px 16px !important;
+  border-radius: 4px !important;
+  border: none !important;
+  background-color: #f0a500 !important;
+  color: #333 !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  width: 100px;   /* same width for Login/Logout */
+  height: 36px;      /* same height */
+  line-height: 1.2;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.navbar-btn:hover {
+  background-color: #fff !important;
+}
